@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+
+    tools:context="com.example.user.adding2number.MainActivity">
+
+
+    <EditText
+        android:id="@+id/main_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="number 1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/main_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_num1"
+
+        android:hint="number 2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/main_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_num2"
+
+        android:hint="click for adding"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/main_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_add_btn"
+        android:hint="sum above"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <ImageView
+
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:tint="@color/color_green_bottom_bar"
+       android:tintMode="src_over"
+       android:src="@mipmap/ic_launcher"
+       android:layout_below="@+id/main_sum"
+       android:id="@+id/Img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView"
+        android:layout_alignRight="@+id/main_num2"
+        android:layout_alignEnd="@+id/main_num2"
+        android:layout_marginTop="63dp" />
+</RelativeLayout>
